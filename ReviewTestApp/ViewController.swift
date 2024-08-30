@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  ReviewTestApp
+//  GitHubCopilotApp
 //
-//  Created by 清水陽平 on 2024/08/30.
+//  Created by 清水陽平 on 2024/08/27.
 //
 
 import UIKit
@@ -14,6 +14,9 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    func noUsedMethod1() {
+        print("noUsedMethod1")
+    }
 
 }
 
