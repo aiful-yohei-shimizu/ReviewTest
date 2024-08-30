@@ -9,15 +9,46 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var fooText: UIButton!
+
+    let foo = "foo"
+
+    let loginFlag: Bool = true
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+
+        maintenceMethod()
+        fooText.setTitle("ボタン", for: .normal)
+
+        // フラグがtrueの場合に実行される処理
+        if loginFlag {
+            print("Flag is enabled")
+        } else {
+            // フラグがfalseの場合に実行される処理
+            print("Flag is disabled")
+        }
     }
 
-    // Todo: 既存の使われないメソッド
+    @IBAction func didTapButton(_ sender: Any) {
+            print(sender)
+    }
+
     func noUsedMethod1() {
         print("使われていないメソッド")
     }
 
+    func noUsedMethod2() {
+        print("使われていないメソッド")
+    }
+
+    func maintenceMethod() {
+        print("タイポがあるメソッド名")
+    }
+
+    @IBOutlet weak var myLabel: UILabel!
+
+    @IBOutlet weak var noLabel: UILabel!
 }
 
